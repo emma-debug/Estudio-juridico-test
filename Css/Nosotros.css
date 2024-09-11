@@ -1,0 +1,128 @@
+
+header {
+    min-height: 40svh;
+    background-image: url("../Assets/webp/nosotros.webp");
+    background-position: center;
+    background-size: cover;
+    height: 40svh;
+    min-height: 270px;
+}
+
+main {
+    min-height:100svh ;
+}
+
+.hero-container {
+    height: 40svh;
+    min-height: 270px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.container {
+    width: min(90%,1440px);
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+
+.us-container {
+    max-width: 650px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+.us-container h2 {
+    border-block-end: 4px solid var(--seccolor);
+}
+.us-container p {
+    font-size: clamp(1rem, 1rem + .5vw, 1.5rem);
+    font-weight: 300;
+}
+
+.btn {
+    text-align: center;
+}
+
+.info-container {
+    height: 700px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.info-container h2{
+    margin-block-end: 1rem;
+    border-block-end: 4px solid var(--seccolor);
+
+}
+
+.info-container p {
+    font-weight: 300;
+}
+
+.item-container {
+    column-gap: clamp(1rem,1rem + 1vw, 3rem);
+    margin-block-end: 2rem;
+}
+
+
+.item {flex-direction: column;}
+
+
+.item > div {
+    gap: 4px;
+    align-items: center;
+}
+
+.item > div p {font-size: clamp(1rem,1rem + 1vw, 1.250rem);}
+
+.item > p {margin: 0;}
+
+
+
+
+@media screen and (width <=1280px) {
+    .container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+    .us-container {
+        height: auto;
+        text-align: center;
+    }
+
+
+    .btn {margin-inline: auto;}
+    .item-container {justify-content: space-between;}
+
+}
+
+
+@media screen and (width <=768px) {
+    .container {
+        flex-wrap: wrap;
+    }
+    .info-container {width: 100%;}
+
+
+    .item-container {
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: flex-start;
+    }
+
+    
+}

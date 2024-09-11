@@ -1,0 +1,59 @@
+
+header {
+    background-image: url("../Assets/webp/areas.webp");
+    background-position: center;
+    background-size: cover;
+    height: 40svh;
+    min-height: 270px;
+
+}
+
+main {
+    background-color: var(--bgcol);
+    min-height:100svh ;
+}
+
+.hero-container {
+    min-height: 270px;
+    height: 40svh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.container {
+    width: min(90%,1440px);
+    justify-content: space-between;
+    gap: 4rem;
+    align-items: center;
+}
+
+
+.service-card {
+    box-shadow: 0 2px 4px #00000025;
+    background-color: #fff;
+    padding-inline: 1rem;
+    padding-block-start: 1rem;
+    height: 330px;
+}
+
+.service-card .subtitle{
+    color: var(--seccolor);
+    font-weight: 600;
+    border-block-end: 2px solid var(--seccolor);
+    margin-inline: auto;
+}
+
+.service-card img {
+    filter: invert(85%);
+}
+
+.more-info {
+    color: var(--seccolor);
+}
+
+
+.more-info:hover {
+    border-block-end: 1px solid var(--seccolor);
+}

@@ -1,0 +1,60 @@
+
+header {
+    min-height: 270px;
+    height: 40svh;
+    background-image: url("../Assets/webp/nosotros.webp");
+    background-position: center;
+    background-size: cover;
+
+}
+
+main {
+    min-height:100svh ;
+}
+
+.hero-container {
+    min-height: 270px;
+    height: 40svh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.container {
+    width: min(90%,1440px);
+    gap: 1rem;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.service-article {
+    margin-block-end:clamp(1rem, 2rem + 2vw, 4rem) ;
+    border-block-end: 1px solid #00000025;
+    max-width: 900px;
+    text-align: left;
+    padding-block-end:1rem;
+}
+
+
+.service-article h2 {
+    font-size: clamp(1.5rem, 1.5rem + 2vw ,2.5rem);
+    color: var(--seccolor);
+    text-align: center;
+    scroll-margin-block-start: 80px;
+}
+
+.sub-list {
+    padding-inline-start: 2rem;
+    padding-block-start: 1rem;
+}
+
+
+
+.service-article ol li {
+    list-style-type: disc;
+    margin-inline-start: 2rem;
+}

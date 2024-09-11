@@ -1,0 +1,382 @@
+
+body {
+    background-color: var(--bgcol);
+    color: var(--prcol);
+    
+}
+
+
+header {
+    min-height: 600px;
+    height: 100svh;
+    background-image: url("../Assets/webp/hero-img.webp");
+
+    background-size: cover;
+    color: var(--bgcol);
+
+}
+
+main {
+    background-color: var(--bgcol);
+}
+
+footer {
+    position: relative;
+    min-height:300px ;
+    background-image: url("../Assets/webp/footer.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-color: var(--prcol);
+}
+
+
+
+
+
+/* layout */
+
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    height: clamp(75px, 75px + 0.5vw, 90px);
+    align-items: center;
+    margin-inline:auto;
+    padding-inline: var(--padding);
+
+    transition: all 200ms ease;
+
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.nav {
+    column-gap: 2rem;   
+    font-weight: 300;
+}
+
+
+.l-flex {
+    display: flex;
+}
+
+.l-grid {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    margin-inline: var(--margin);
+
+}
+
+
+/*HERO*/
+
+.hero-container {
+    height: 100svh;
+    min-height: 600px;
+    align-items: center;
+}
+
+.hero-text{
+    grid-column: 1/-1;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.text-container {
+    margin-block-end:2rem;
+
+}
+
+
+.container-btn {
+    gap: clamp(0.5rem,1rem + 1vw,2rem);
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
+.subtitle-header.services {
+    margin-block-end: 3rem;
+}
+
+/*MAIN*/
+
+
+.container {
+    width: 100%;
+    grid-column: 1/-1;
+    text-align: center;
+    margin-inline: auto;
+    padding-block: 3rem;
+}
+
+.nos-container2 {
+    margin-block: 2rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+/*SERVICES*/
+
+.service-container {
+    min-height: 100vh;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    color: var(--bgcol);
+    background-image: url("../Assets/webp/bkimg.webp");
+}
+
+
+.container > .title-sec {
+    padding-block-end:0 ;
+}
+
+
+.container > .subtitle {
+    margin-block:0 4rem;
+    max-width:750px;
+    margin-inline: auto;
+}
+
+.card-container {
+    width: min(90%,1440px);
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: clamp(2rem,3rem + 2vw,5rem);
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-card {
+    max-width: 335px;
+    height: 340px;
+}
+
+.service-card .subtitle {
+    font-weight: 500;
+}
+
+.desc {
+    font-size: clamp(.8rem, 0.10vw + .9rem ,1rem);
+
+}
+.more-info {
+    font-weight: 300;
+    color: var(--seccolor2);
+    border-block-end: 1px solid transparent;
+    transition: all 500ms ease;
+}
+
+/*Footer*/
+.footer-container {
+    width: min(95%,1080px);
+    min-height: 400px;
+    margin-block-start: auto;
+    gap: clamp(.7rem,.7rem + 2vw,3rem);
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
+    color: var(--bgcol);
+}
+
+.footer-container ul li {
+    font-size: clamp(.8rem, 0.10vw + .9rem ,1rem);
+
+}
+
+.footer-container ul:last-child {
+
+    justify-self: flex-start;
+}
+
+
+
+/* componentes */
+
+
+
+.title {
+    font-size: clamp(2rem,1rem + 5vw,4rem);
+    font-weight: 600;
+}
+
+.title-sec {
+    padding-block: 2rem;
+    letter-spacing: 5px;
+    font-weight: 600;
+    font-size: clamp(2rem,1rem + 5vw,4rem);
+    
+}
+
+.subtitle {
+    font-size: clamp(1rem,.8rem + 1vw,1.5rem);
+    font-weight: 300;
+    
+}
+
+.subtitle-header {
+    font-size: clamp(1rem,.8rem + 1vw,1.5rem);
+    font-weight: 500;
+    text-shadow: 0 1px 4px #000;
+}
+
+.btn {
+    width: 225px;
+    display: inline-block;
+    font-family: "Raleway","serif";
+    font-size: clamp(1rem,1rem + .5vw,1.5rem);
+    font-weight: 300;
+    padding: .5rem 2rem;
+    border-radius: 4px;
+    color: var(--bgcol);
+    background-color: var(--seccolor);
+    transition: background-color, 200ms ease;
+
+}
+
+.shadow {
+   box-shadow: 0 4px 4px #00000025; 
+}
+
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--seccolor);
+}
+
+.nos-item {
+    flex-direction: column;
+    align-items: center;
+    max-width: max(20vw,200px);
+    justify-content: center;
+}
+
+
+.btn-menu {
+    border: none;
+    background-color: transparent;
+}
+
+
+.nav a {
+    transition: transform 150ms ease;
+}
+
+
+.whatsapp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: #60D669;
+    border-radius: 50%;
+    
+}
+
+.whatsapp a {
+    height: 60px;
+    width: 60px;
+    display: grid;
+    place-items: center;
+}
+
+.whatsapp img {
+    margin: auto;
+}
+
+/*pseudoElem*/
+
+.nav a:hover {
+    transform: scale(1.01);
+    color: var(--hover);
+}
+
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #632346;
+    color: var(--hover);
+}
+
+
+.more-info:hover {
+    border-block-end: 1px solid var(--seccolor2);
+}
+
+.is-scrolled {
+    background-repeat: repeat;
+    background-color: var(--bgcol);
+    color: var(--prcol);
+}
+
+.is-hidden {
+    display: none;
+}
+
+.is-inverted {
+    filter: invert(100%);
+}
+
+.nav.is-shown {
+    top: clamp(75px, 75px + 0.5vw, 90px);
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding: 1rem;
+    row-gap:1rem;
+    color: var(--prcol);
+    background-color: var(--bgcol);
+
+}
+
+/*Media*/
+
+@media screen and (width <=768px) {
+
+    .nav {display: none;}
+
+    .nos-container2 {flex-wrap: wrap;}
+
+    .is-hidden {display: initial;}
+
+    .footer-container {
+            padding-block: 1rem;
+            flex-direction: column; 
+            align-items: flex-start;
+            margin-inline: auto;
+            align-content: flex-start;
+    }
+}
+
+@media screen and (width <=425px) {
+    
+    header {background-position: -70%;}
+    
+    footer {background-image: none;}
+
+    .container-btn .btn {flex-grow: 1;}
+
+   
+
+
+}
+

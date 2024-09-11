@@ -1,0 +1,149 @@
+
+header {
+    min-height: 40svh;
+    background-image: url("../Assets/webp/libros.webp");
+    background-position: center;
+    background-size: cover;
+    height: 40svh;
+    min-height: 270px;
+}
+
+main {
+    min-height:100svh ;
+    background-color: var(--bgcol);
+}
+
+.hero-container {
+    height: 40svh;
+    min-height: 270px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.container {
+    width: min(90%,1440px);
+    justify-content: space-between;
+    gap: clamp(1rem, 2rem + 1vw,4rem);
+}
+
+.form-container {
+    width: 100%;
+    max-width: 700px;
+    flex-direction: column;
+}
+
+
+
+.form-container h2 {
+    margin-block-end: 2rem;
+    border-block-end: 4px solid var(--seccolor);
+
+}
+
+.info-container {
+    flex-direction: column;
+    padding-block-start:7rem;
+}
+
+.info-container h2{
+    margin-block-end: 1rem;
+    border-block-end: 4px solid var(--seccolor);
+
+}
+
+.info-container p {
+    font-weight: 300;
+}
+
+.form-container form {
+    flex-direction: column;
+    row-gap:2rem;
+}
+
+.item-container {
+    column-gap: clamp(1rem,1rem + 1vw, 3rem);
+    margin-block-end: 2rem;
+}
+
+.item {
+    flex-direction: column;
+
+}
+
+
+.item > div {
+    gap: 4px;
+    align-items: center;
+}
+
+.item > div p {
+    font-size: clamp(1rem,1rem + 1vw, 1.250rem);
+}
+
+.item > p {
+    margin: 0;
+}
+
+input,
+textarea {
+    font-size: clamp(1rem,1rem + 1vw, 1.5rem);
+    padding: .5rem;
+    border: none;
+    box-shadow: 0 1px 4px #00000025;
+    border-radius: 4px;
+    font-weight: 300;
+
+}
+
+textarea {
+    resize: none;
+    height: 300px;
+}
+
+
+.btn {
+    width: auto;
+    border: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: "Roboto";
+    color: var(--form);
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+
+}
+
+
+@media screen and (width <=1440px) {
+    .container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .item-container {justify-content: space-between;}
+}
+
+
+@media screen and (width <=768px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .item-container {
+        row-gap: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    
+}
