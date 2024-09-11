@@ -13,6 +13,10 @@ header {
 
 }
 
+.herencia {
+    background-image: url("../Assets/webp/herencia.webp");
+
+}
 main {
     min-height:100svh ;
 }
