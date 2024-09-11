@@ -2,9 +2,14 @@
 header {
     min-height: 270px;
     height: 40svh;
-    background-image: url("../Assets/webp/nosotros.webp");
+    background-image: url("../Assets/webp/trabajo.webp");
     background-position: center;
     background-size: cover;
+
+}
+
+.family {
+    background-image: url("../Assets/webp/divorcio.webp");
 
 }
 
